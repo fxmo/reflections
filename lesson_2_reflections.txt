@@ -13,3 +13,17 @@ How is the staging area different from the working directory and the repository?
 How can you use the staging area to make sure you have one commit per logical change?
 
 	only files affected by and reflecting the logical change are added to stating area to be committed separately
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+	creating alternative versions of the code (eg. adding experimental features, different languages)
+	
+How do the diagrams help you visualize the branch structure?
+
+	diagrams show the parent/child relationship for each commit, hence visualising the succession of commits in each branch
+	remark: HEAD: means current commit
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+	merging branches will combine all changes recorded in the commits in the merged branches
+
