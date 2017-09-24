@@ -24,7 +24,8 @@ git remote						[view current remotes]
 git remote -v					[view current remotes with URLs]
 git remote add <remote_name> <URL>	[create remote]
 
-git push <remote_name> <local_branch>	[send commits in local branch to remote]
+git push <remote_name> <local_branch>	[send branch from local repository to remote repository]
+git pull <remote_name> <remote_branch>	[pull branch from remote repository to current branch in local repository]
 
 git add
 git commit
