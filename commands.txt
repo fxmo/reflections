@@ -1,4 +1,4 @@
-Git Commands & Tasks
+GIT COMMANDS & TASKS
 
 git init						[create repository in current directory]
 git clone <URL to repository>	[clone an existing repository]
@@ -16,9 +16,15 @@ git log -n 1
 
 git status
 
-git branch						[shows branches]
-git branch <new_branch>			[creates new branch]
+git branch						[view current branches]
+git branch <branch_name>		[creates new branch]
 git branch -d <branch_name>		[delete a branch]
+
+git remote						[view current remotes]
+git remote -v					[view current remotes with URLs]
+git remote add <remote_name> <URL>	[create remote]
+
+git push <remote_name> <local_branch>	[send commits in local branch to remote]
 
 git add
 git commit
