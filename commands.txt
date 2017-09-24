@@ -1,0 +1,37 @@
+Git Commands & Tasks
+
+git init						[create repository in current directory]
+git clone <URL to repository>	[clone an existing repository]
+
+git diff						[compare working directory to staging area]
+git diff --staged				[compare staging area to most recent commit]
+git diff <commit1> <commit2>
+
+git show <commit_ID>			[highlight changes of commit versus its parent(s)]
+
+git log							[show log of commits in current branch; 'q' for quit]
+git log --stat
+git log --graph --oneline master <other_branch>
+git log -n 1
+
+git status
+
+git branch						[shows branches]
+git branch <new_branch>			[creates new branch]
+git branch -d <branch_name>		[delete a branch]
+
+git add
+git commit
+git commit -m "<commit message>"
+
+git checkout <commit_ID>
+git checkout <branch_name>
+git checkout -b <new_branch>	[same as "git branch <new_branch>" plus "git checkout <new_branch>"]
+
+git merge (current_branch) alt_branch
+
+git reset
+git reset --hard				[discards any changes in the working directory and the staging area]
+
+HEAD:							current commit
+STAGING AREA:					same as most recent commit, until changes are added
