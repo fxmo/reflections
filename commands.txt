@@ -16,7 +16,8 @@ git log -n 1
 
 git status
 
-git branch						[view current branches]
+git branch						[view local branches and mark current]
+git branch -a					[view local and remote branches and mark current]
 git branch <branch_name>		[creates new branch]
 git branch -d <branch_name>		[delete a branch]
 
@@ -26,15 +27,21 @@ git remote add <remote_name> <URL>	[create remote]
 
 git push <remote_name> <local_branch>	[send branch from local repository to remote repository]
 git pull <remote_name> <remote_branch>	[pull branch from remote repository to current branch in local repository]
+ >>	git fetch origin
+	git merge master origin/master
 
+git fetch origin				[update local copy of remote branch 'origin']
+	
 git add
 git commit
 git commit -m "<commit message>"
 
 git checkout <commit_ID>
 git checkout <branch_name>
-git checkout -b <new_branch>	[same as "git branch <new_branch>" plus "git checkout <new_branch>"]
-
+git checkout -b <new_branch>
+ >>	git branch <new_branch>
+	git checkout <new_branch>
+ 
 git merge (current_branch) alt_branch
 
 git reset
@@ -42,3 +49,4 @@ git reset --hard				[discards any changes in the working directory and the stagi
 
 HEAD:							current commit
 STAGING AREA:					same as most recent commit, until changes are added
+FORK:							clone a repository on GitHub
